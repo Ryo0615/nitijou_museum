@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: serif;
+  line-height: 2.5;
+  color: #432;
+  background-color: #ddd;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* HEADER */
+.page-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: snow;
+  padding: 0 5%;
+  background-image: url(../images/haikei_header.jpg);
+  background-repeat: repeat;
+}
+
+.logo{
+  width: 75px;
+  margin-top: 14px;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+.main-nav li{
+  margin-left: 64px;
+}
+
+.main-nav a{
+  color: black;
+  text-decoration: none;
+}
+
+.main-nav a:hover{
+  color: black;
+}
+
+.wrapper{
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  /* padding: 0 4%; */
+}
+
+/* FOOTER */
+footer{
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 50px;
+}
+
+footer p{
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* HOME */
+.main-content{
+  background-image: url(../images/fuji7.jpg);
+  max-width: 90%;
+  height: 110vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #dddddd;
+}
+.main-content p{
+  padding-top: 200px;
+  padding-left: 100px;
+  writing-mode: vertical-rl;
+  text-align: left;
+  font-size: 2rem;
+  color: #dbedf0;
+
+}
+
+/* 日々のこと */
+.hibinokoto-content{
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 30px 0;
+  background-color: #e6f0f0;
+
+}
+.hibinokoto-item{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 50px;
+  background-color: snow;
+}
+.imgBox{
+  width: 40%;
+  margin: 10px;
+}
+.textBox{
+  width: 40%;
+  line-height: 1.5;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-bottom: 50px;
+}
+
+/* 日常美術館とは */
+.omoide {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.omoide-container{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  grid-template-rows: 1fr 1fr;
+  max-width: 90%;
+  height: 70vw;
+  padding: 50px 50px;
+  background-image: url(../images/haikei.jpg);
+  background-size: cover;
+  border-style: groove;
+  border-width: 20px;
+  border-color: #c1994d;
+}
+
+.omoide-item{
+  background-color: #0bd;
+  background-size: cover;
+  padding: 10px;
+  /* color: #4ebdcc; */
+  color: #97cdf3;
+  font-family: serif;
+  line-height: 1.5;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  text-shadow: #000 1px 1px 0
+}
+
+.item1{
+  background-image: url(../images/fuji14.jpg);
+}
+.item2{
+  background-image: url(../images/fuji15.jpg);
+}
+.item3{
+  background-image: url(../images/fuji16.jpg);
+}
+.item4{
+  background-image: url(../images/fuji17.jpg);
+}
+.omoide-item span{
+  font-size: 5rem;
+}

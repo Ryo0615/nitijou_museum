@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* IE */
+@font-face {
+  font-family: '怨霊フォント';
+  src: url(../fonts/onryo.ttf);
+}
+/* Firefox, Opera, Safari */
+@font-face {
+  font-family: '怨霊フォント';
+  src: url(../fonts/onryo.ttf) format(”truetype”);
+}
+
+/* 共通部分 */
+html{
+  font-size: 100%;
+}
+
+body{
+  font-family: '怨霊フォント';
+  line-height: 2.5;
+  color: red;
+  background-color: black;
+
+}
+
+img{
+  max-width: 100%;
+  filter: invert(100%);
+}
+
+/* HEADER */
+.page-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: snow; */
+  padding: 0 5%;
+}
+
+.logo{
+  width: 75px;
+  margin-top: 14px;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  font-family: '怨霊フォント';
+  /* text-transform: uppercase; */
+  /* margin-top: 34px; */
+  list-style: none;
+}
+
+.main-nav li{
+  margin-left: 64px;
+}
+
+.main-nav a{
+  color: red;
+  text-decoration: none;
+}
+
+.main-nav a:hover{
+  /* color: green; */
+}
+
+.wrapper{
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  /* padding: 0 4%; */
+}
+
+/* FOOTER */
+footer{
+  background: black;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 50px;
+}
+
+footer p{
+  color: red;
+  font-size: 0.875rem;
+}
+
+/* HOME */
+.main-content{
+  background-image: url(../images/fuji7.jpg);
+  max-width: 90%;
+  height: 110vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: snow; */
+  /* filter: invert(100%); */
+  position: relative;
+  z-index: 0;
+}
+
+.main-content::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: invert(100%);
+  z-index: -1;
+}
+
+.main-content p{
+  filter: none;
+  padding-top: 100px;
+  padding-left: 0px;
+  writing-mode: vertical-rl;
+  text-align: left;
+  font-size: 2rem;
+  color: red;
+  font-family: '怨霊フォント';
+
+}
